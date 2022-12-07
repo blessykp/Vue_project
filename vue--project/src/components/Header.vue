@@ -37,73 +37,10 @@
 
 </template>
 <script>
-export default{
+export default{   
     name:"headerComponent"
-}
+};
 </script>
 <style>
-* {
-     box-sizing: border-box !important;
-     transition: ease all 0.5s;
-}
-.logo {
-    width: 100%;
-    float: left;
-    padding-left: 30px;
-}
-.menu_text {
-    float: right;
-    width: 30%;
-    padding-top: 15px;
-}
-.padding_left0{
-    padding-left: 20px;
-}
-.shoping_bag {
-    float: right;
-    text-align: right;
-    padding-left: 30px;
-    padding-top: 8px;
-}
-.header_section {
-    width: 100%;
-    float: left;
-    background-image: url(src/assets/images/banner-bg.png);
-    height: auto;
-    padding-top: 27px;
-    padding-bottom: 25px;
-    background-size: 100%;
-    padding-bottom: 201px;
-}
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-.overlay a {
-    padding: 0px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-}
-.toggle_menu {
-    top: 8px;
-    position: relative;
-    left: 0px;
-}
+
 </style>

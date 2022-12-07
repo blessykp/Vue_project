@@ -1,27 +1,12 @@
 <template>
-  <div id="app">
-    
-    
-   
-    <headerComponent></headerComponent>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <footerComponent></footerComponent>    
-  </div>
+ <div>
+ <HomeHeaderComponent></HomeHeaderComponent>
+  <header></header>
+  <router-view/>
+  <footer></footer>
+ </div>
+  
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-import headerComponent from'./components/Header.vue'
-import footerComponent from './components/footer.vue'
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-    headerComponent,
-    footerComponent
-  }
-}
-</script>
 
 <style>
 #app {
@@ -30,6 +15,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

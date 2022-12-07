@@ -4,16 +4,16 @@
       <div class="container">
         <div class="footer_main">
           <div class="footer_left">
-            <h1 class="contact_taital"><span>Contact </span> <img src="src/assets/images/icon-2.png"> <span>Us</span></h1>
+            <h1 class="contact_taital"><span>Contact </span> <img src="images/icon-2.png"> <span>Us</span></h1>
           </div>
           <div class="footer_left">
-            <div class="location_text"><a href="#"><img src="src/assets/images/map-icon.png"><span class="padding_left_15">Locations</span></a></div>
+            <div class="location_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">Locations</span></a></div>
           </div>
           <div class="footer_left">
-            <div class="location_text"><a href="#"><img src="src/assets/images/call-icon.png"><span class="padding_left_15">+71 9876543210</span></a></div>
+            <div class="location_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_15">+71 9876543210</span></a></div>
           </div>
           <div class="footer_left">
-            <div class="location_text"><a href="#"><img src="src/assets/images/map-icon.png"><span class="padding_left_15">demo@gmail.com</span></a></div>
+            <div class="location_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">demo@gmail.com</span></a></div>
           </div>
         </div>
         <div class="contact_section">
@@ -35,10 +35,10 @@
               </div>
               <div class="social_icon">
                 <ul>
-                  <li><a href="#"><img src="src/assets/images/fb-icon1.png"></a></li>
-                  <li><a href="#"><img src="src/assets/images/twitter-icon1.png"></a></li>
-                  <li><a href="#"><img src="src/assets/images/linkden-icon1.png"></a></li>
-                  <li><a href="#"><img src="src/assets/images/instagram-icon1.png"></a></li>
+                  <li><a href="#"><img src="images/fb-icon1.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon1.png"></a></li>
+                  <li><a href="#"><img src="images/linkden-icon1.png"></a></li>
+                  <li><a href="#"><img src="images/instagram-icon1.png"></a></li>
                 </ul>
               </div>
             </div>
@@ -52,8 +52,28 @@
 <script>
 
 export default{
-    name:"footerComponent"
+ name:"ContactView",
+ data() {
+    return {
+      name: "",
+      email: "",
+      phone_number: "",
+      message: "",
+    };
+  },
+  methods: {
+    getFormValues() {
+      console.log(
+        "Form Values:",
+        "\nName:" + this.name,
+        "\nEmail:" + this.email,
+        "\nPhone:" + this.phone_number,
+        "\nMessage:" + this.message
+      );
+    },
+  },
 };
+
 </script>
 
 <style>
