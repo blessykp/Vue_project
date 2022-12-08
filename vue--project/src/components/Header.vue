@@ -16,18 +16,18 @@
                   <div class="shoping_bag"><img src="../assets/images/search-icon.png"></div>
                 </div> 
                 <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
                 <div class="overlay-content">
-                  <a href="index.html">Home</a>
-                  <a href="services.html">Services</a>
-                  <a href="about.html">About</a>
-                  <a href="choose.html">Choose</a>
-                  <a href="team.html">Team</a>
-                  <a href="contact.html">Contact Us</a>
+                  <a href="/">Home</a>
+                  <a href="services">Services</a>
+                  <a href="about">About</a>
+                  <a href="choose">Choose</a>
+                  <a href="team">Team</a>
+                  <a href="contact">Contact Us</a>
                 </div>
                 </div>
                 <span class="navbar-toggler-icon"></span>
-                <span onclick="openNav()"><img src="../assets/images/toggle-icon.png" class="toggle_menu"></span>
+                <span @click="openNav()"><img src="../assets/images/toggle-icon.png" class="toggle_menu"></span>
               </ul>
             </div>      
           </div>
