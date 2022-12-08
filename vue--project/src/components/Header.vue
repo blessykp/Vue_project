@@ -1,9 +1,9 @@
 <template>
- <div class="header_section">
+  <div class="header_section background_bg">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
-            <div class="logo"><a href="index.html"><img src="../assets/images/logo.png"></a></div>
+            <div class="logo"><a href="index.html"><img src="src/assets/images/logo.png"></a></div>
           </div>
           <div class="col-md-9">
             <div class="menu_text">
@@ -13,7 +13,7 @@
                     <div class="padding_left0"><a href="#">Register</a>
                     <span class="padding_left0"><a href="#">Login</a></span></div>
                   </div>
-                  <div class="shoping_bag"><img src="../assets/images/search-icon.png"></div>
+                  <div class="shoping_bag"><img src="src/assets/images/search-icon.png"></div>
                 </div> 
                 <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
@@ -27,14 +27,12 @@
                 </div>
                 </div>
                 <span class="navbar-toggler-icon"></span>
-                <span @click="openNav()"><img src="../assets/images/toggle-icon.png" class="toggle_menu"></span>
+                <span @click="openNav()"><img src="src/assets/images/toggle-icon.png" class="toggle_menu"></span>
               </ul>
             </div>      
           </div>
         </div>
       </div>
-    
-      
     </div>
 
 </template>
