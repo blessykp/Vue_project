@@ -433,10 +433,10 @@ export default {
 
       if (this.name && this.email && this.phone_number && this.message) {
 
-
+        let new_email=this.email.toLowerCase()
 
         // eslint-disable-next-line
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(new_email)) {
           console.log("\nName:" + this.name);
           console.log("\nEmail:" + this.email);
           console.log("\nPhone Number:" + this.phone_number);
