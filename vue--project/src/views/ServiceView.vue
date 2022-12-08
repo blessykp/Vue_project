@@ -1,6 +1,6 @@
 <template>
-
-<div class="services_section layout_padding">
+    <!-- services section start -->
+    <div class="services_section layout_padding">
       <div class="container">
         <h1 class="services_taital"><span>Our</span> <img src="images/icon-1.png"> <span style="color: #1f1f1f">Services</span></h1>
         <p class="services_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
@@ -13,14 +13,14 @@
                     <div class="box_section active">
                       <div class="tiles_img"></div>
                       <h3 class="tile_text active">Tile & Grout</h3>
-                      <p class="lorem_text active">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+                      <p class="lorem_text active">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="box_section">
                       <div class="tiles_img_1"></div>
                       <h3 class="tile_text">Carpet Cleaning</h3>
-                      <p class="lorem_text">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                      <p class="lorem_text">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
                     </div>
                   </div>
                 </div>
@@ -33,14 +33,14 @@
                     <div class="box_section active">
                       <div class="tiles_img"></div>
                       <h3 class="tile_text active">Tile & Grout</h3>
-                      <p class="lorem_text active">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+                      <p class="lorem_text active">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="box_section">
                       <div class="tiles_img_1"></div>
                       <h3 class="tile_text">Carpet Cleaning</h3>
-                      <p class="lorem_text">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                      <p class="lorem_text">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
                     </div>
                   </div>
                 </div>
@@ -53,14 +53,14 @@
                     <div class="box_section active">
                       <div class="tiles_img"></div>
                       <h3 class="tile_text active">Tile & Grout</h3>
-                      <p class="lorem_text active">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+                      <p class="lorem_text active">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="box_section">
                       <div class="tiles_img_1"></div>
                       <h3 class="tile_text">Carpet Cleaning</h3>
-                      <p class="lorem_text">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                      <p class="lorem_text">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
                     </div>
                   </div>
                 </div>
@@ -76,6 +76,12 @@
         </div>
       </div>
     </div>
+    <!-- services section start -->
+
+                 
+
+  
+
 
 </template>
 
@@ -83,7 +89,7 @@
 
 export default{
 
-    name:"ServiceView"
+    name:"ServiceView",
 };
 </script>
 <style>

@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="team_section layout_padding">
       <div class="container">
         <h1 class="choose_taital"><span>Our </span> <img src="images/icon-1.png"> <span style="color: #1f1f1f">Team</span></h1>
@@ -89,11 +90,34 @@
         </div>
       </div>
     </div>
-
+     <!-- Newsletter section start -->
+     <div class="newsletter_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="newsletter_text">Newsletter</h1>
+            <p class="tempor_text">Tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="col-md-6">
+            <div class="mail_bt_main">
+              <input type="text" class="mail_text" placeholder="ENTER YOUR MAIL" name="Enter Tour Mail">
+              <div class="subscribe_bt" ><a href="#">SUBSCRIBE</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Newsletter section end -->
 </template>
 <script>
+
+
 export default{
-    name:"TeamView"};
+    name:"TeamView",
+    
+      };
 </script>
 
 <style>

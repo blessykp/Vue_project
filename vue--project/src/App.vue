@@ -1,13 +1,30 @@
 <template>
  <div>
- <HomeHeaderComponent></HomeHeaderComponent>
-  <header></header>
-  <router-view/>
-  <footer></footer>
+ <!-- <HomeHeaderComponent></HomeHeaderComponent> -->
+<headerComponent></headerComponent>
+<router-view></router-view>
+  <footerComponent></footerComponent>
  </div>
   
 </template>
 
+<script>
+
+import headerComponent from "./components/Header.vue";
+
+import footerComponent from "./components/footer.vue";
+// import HomeHeaderComponent from "./components/Home_Header.vue";
+
+export default {
+  name: 'App',
+  components: {
+    headerComponent,
+    footerComponent,
+    // HomeHeaderComponent
+  },
+  
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

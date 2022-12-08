@@ -20,11 +20,11 @@
           <div class="row">
             <div class="col-md-6">
               <div class="mail_section">
-                <input type="" class="email_text" placeholder="Name" name="Name">
-                <input type="" class="email_text" placeholder="Email" name="Email">
-                <input type="" class="email_text" placeholder="Phone Number" name="Phone Number">
+                <input type="text" class="email_text" placeholder="Name" name="Name" id="name">
+                <input type="email" class="email_text" placeholder="Email" name="Email">
+                <input type="number" class="email_text" placeholder="Phone Number" name="Phone Number">
                 <textarea class="massage_text" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
-                <div class="send_bt"><a href="#">send</a></div>
+                <div class="send_bt"><a href="#" onclick="getFormValues()">send</a></div>
               </div>
             </div>
             <div class="col-md-6">
@@ -63,13 +63,15 @@ export default{
   },
   methods: {
     getFormValues() {
-      console.log(
-        "Form Values:",
-        "\nName:" + this.name,
-        "\nEmail:" + this.email,
-        "\nPhone:" + this.phone_number,
-        "\nMessage:" + this.message
-      );
+      // let name=document.getElementById('name')
+      // console.log(
+      //   "Form Values:",
+      //   "\nName:" + this.name,
+      //   "\nEmail:" + this.email,
+      //   "\nPhone:" + this.phone_number,
+      //   "\nMessage:" + this.message
+      // );
+      console.log("Hi");
     },
   },
 };

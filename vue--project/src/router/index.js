@@ -1,11 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ChooseView from "../views/Choose.vue";
-import AboutView from "../views/About.vue";
-import ServiceView from "../views/Service.vue";
-import TeamView from "../views/Team.vue";
-import ContactView from "../views/Contact.vue";
-import Home from "../views/Home.vue";
+import ChooseView from "../views/ChooseView.vue";
+import AboutView from "../views/AboutView.vue";
+import ServiceView from "../views/ServiceView.vue";
+import TeamView from "../views/TeamView.vue";
+import ContactView from "../views/ContactView.vue";
+import Home from "../views/HomeView.vue";
 
 Vue.use(VueRouter);
 
@@ -26,7 +26,7 @@ const routes = [
     component: TeamView,
   },
   {
-    path: "/contactView",
+    path: "/contact",
     name: "ContactView",
     component: ContactView,
   },
@@ -41,6 +41,7 @@ const routes = [
     // meta: { layout: "HomeLayout" },
     component: Home,
   },
+  
 ];
 
 const router = new VueRouter({

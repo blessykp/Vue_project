@@ -1,34 +1,7 @@
 <template>
 
-<div>
-    <div class="banner_section layout_padding header_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5">
-            <h1 class="banner_taital">Best YOUR</h1>
-            <h1 class="banner_taital_1">house CLEAN</h1>
-            <p class="banner_text">
-              Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim
-            </p>
-            <div class="contact_bt">
-              <a href="contact.html"
-                >CONTACT US<span class="contact_padding"
-                  ><img src="../assets/images/contact-icon.png" /></span
-              ></a>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="play_icon">
-              <a href="#"><img src="../assets/images/play-icon.png" /></a>
-            </div>
-          </div>
-          <div class="col-sm-5">
-            <div><img src="../assets/images/img-1.png" class="image_1" /></div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div>
+
 
     <div class="services_section layout_padding">
       <div class="container">
@@ -121,20 +94,10 @@
               </div>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#main_slider"
-            role="button"
-            data-slide="prev"
-          >
+          <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
             <i class="fa fa-angle-left"></i>
           </a>
-          <a
-            class="carousel-control-next"
-            href="#main_slider"
-            role="button"
-            data-slide="next"
-          >
+          <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
             <i class="fa fa-angle-right"></i>
           </a>
         </div>
@@ -160,10 +123,8 @@
               dolore magna aliqua. Ut enim ad minim veniam,
             </p>
             <div class="contact_bt_1">
-              <a href="#"
-                >READ MORE<span class="contact_padding"
-                  ><img src="../assets/images/contact-icon1.png" /></span
-              ></a>
+              <a href="#">READ MORE<span class="contact_padding"><img
+                    src="../assets/images/contact-icon1.png" /></span></a>
             </div>
           </div>
         </div>
@@ -369,12 +330,7 @@
           </div>
           <div class="col-md-6">
             <div class="mail_bt_main">
-              <input
-                type="text"
-                class="mail_text"
-                placeholder="ENTER YOUR MAIL"
-                name="Enter Tour Mail"
-              />
+              <input type="text" class="mail_text" placeholder="ENTER YOUR MAIL" name="Enter Tour Mail" />
               <div class="subscribe_bt"><a href="#">SUBSCRIBE</a></div>
             </div>
           </div>
@@ -393,29 +349,19 @@
           </div>
           <div class="footer_left">
             <div class="location_text">
-              <a href="#"
-                ><img src="../assets/images/map-icon.png" /><span class="padding_left_15"
-                  >Locations</span
-                ></a
-              >
+              <a href="#"><img src="../assets/images/map-icon.png" /><span class="padding_left_15">Locations</span></a>
             </div>
           </div>
           <div class="footer_left">
             <div class="location_text">
-              <a href="#"
-                ><img src="../assets/images/call-icon.png" /><span class="padding_left_15"
-                  >+71 9876543210</span
-                ></a
-              >
+              <a href="#"><img src="../assets/images/call-icon.png" /><span class="padding_left_15">+71
+                  9876543210</span></a>
             </div>
           </div>
           <div class="footer_left">
             <div class="location_text">
-              <a href="#"
-                ><img src="../assets/images/map-icon.png" /><span class="padding_left_15"
-                  >demo@gmail.com</span
-                ></a
-              >
+              <a href="#"><img src="../assets/images/map-icon.png" /><span
+                  class="padding_left_15">demo@gmail.com</span></a>
             </div>
           </div>
         </div>
@@ -423,32 +369,13 @@
           <div class="row">
             <div class="col-md-6">
               <div class="mail_section">
-                <input
-                  type=""
-                  class="email_text"
-                  placeholder="Name"
-                  name="Name"
-                />
-                <input
-                  type=""
-                  class="email_text"
-                  placeholder="Email"
-                  name="Email"
-                />
-                <input
-                  type=""
-                  class="email_text"
-                  placeholder="Phone Number"
-                  name="Phone Number"
-                />
-                <textarea
-                  class="massage_text"
-                  placeholder="Message"
-                  rows="5"
-                  id="comment"
-                  name="Message"
-                ></textarea>
-                <div class="send_bt"><a href="#">send</a></div>
+                <input type="text" class="email_text" placeholder="Name" name="Name" v-model="name" />
+                <input type="email" class="email_text" placeholder="Email" name="Email" id="email" v-model="email" />
+                <input type="number" class="email_text" placeholder="Phone Number" name="Phone Number"
+                  v-model="phone_number" />
+                <textarea class="massage_text" placeholder="Message" rows="5" v-model="message"
+                  name="Message"></textarea>
+                <div class="send_bt"><a href="#" @click="getFormValues">send</a></div>
               </div>
             </div>
             <div class="col-md-6">
@@ -456,12 +383,7 @@
                 <div class="map-responsive">
                   <iframe
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                    width="600"
-                    height="280"
-                    frameborder="0"
-                    style="border: 0; width: 100%"
-                    allowfullscreen
-                  ></iframe>
+                    width="600" height="280" frameborder="0" style="border: 0; width: 100%" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="social_icon">
@@ -491,27 +413,75 @@
 
 <script>
 
-export default{
-name :"HomeComponent",
-data() {
+export default {
+  name: "HomeComponent",
+  data() {
     return {
       name: "",
       email: "",
       phone_number: "",
       message: "",
+      errors: []
     };
   },
+
+
   methods: {
-    getFormValues() {
-      console.log(
-        "Form Values:",
-        "\nName:" + this.name,
-        "\nEmail:" + this.email,
-        "\nPhone:" + this.phone_number,
-        "\nMessage:" + this.message
-      );
+
+    // validateEmail(email) {
+    // eslint-disable-next-line
+    //   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    //     return
+    //   } else {
+    //     alert("Email invalid!")
+    //   }
+    // },
+    getFormValues(e) {
+      this.errors = []
+
+      if (this.name && this.email && this.phone_number && this.message) {
+
+
+
+        // eslint-disable-next-line
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+          console.log("\nName:" + this.name);
+          console.log("\nEmail:" + this.email);
+          console.log("\nPhone Number:" + this.phone_number);
+
+          console.log("\nMessage:" + this.message);
+        } else {
+          alert("Email invalid!")
+          this.errors.push("Invalid Email")
+        }
+
+
+
+
+
+
+      }
+      if (!this.name) {
+
+        this.errors.push("Please fill your name")
+      }
+      if (!this.email) {
+        this.errors.push("Please fill your email")
+
+      }
+      if (!this.phone_number) {
+        this.errors.push("Please fill your phone number")
+      }
+      if (!this.message) {
+        this.errors.push("Please fill your message")
+      }
+      console.warn("errors", this.errors)
+      e.preventDefault();
+
     },
-  },
+  }
+
+
 };
 </script>
 
