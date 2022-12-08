@@ -428,14 +428,6 @@ export default {
 
   methods: {
 
-    // validateEmail(email) {
-    // eslint-disable-next-line
-    //   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    //     return
-    //   } else {
-    //     alert("Email invalid!")
-    //   }
-    // },
     getFormValues(e) {
       this.errors = []
 
